@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Sites</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='/sites.css') }}">
+        <link rel="icon" type="image/x-icon" href="/static/image/IMG_4613-removebg-preview.png">
+    </head>
+    <body>
+        <div class="navbar">
+            <ul>
+                <li class="li-img">
+                    <img src="/static/image/IMG_4614-removebg-preview.png" alt="Galactic Ventures">
+                </li>
+                <li>
+                    <strong>Galactic Ventures</strong>
+                </li>
+            </ul>
+        </div>
+        
+        <h1>Sites</h1>
+        
+        <div class="div-row">
+            <img src="{{ url_for('static', filename='/image/IMG_mercury.jpg') }}" alt="Mercury">
+        </div>
+        <div class="div-a">
+            <a href="{{ url_for('mercury') }}" target=_self>Mercury</a>
+        </div>
+
+        <div class="div-row">
+            <img src="{{ url_for('static', filename='/image/IMG_venus.jpg') }}" alt="Venus">
+        </div>
+        <div class="div-a">
+            <a href="{{ url_for('venus') }}" target=_self>Venus</a>
+        </div>
+        
+        <div class="div-row">
+            <img src="{{ url_for('static', filename='/image/IMG_mars.jpg') }}" alt="Mars">
+        </div>
+        <div class="div-a">
+            <a href="{{ url_for('mars') }}" target=_self>Mars</a>
+        </div>
+        
+        <div class="div-row">
+           <img src="{{ url_for('static', filename='/image/IMG_jupiter.jpg') }}" alt="Jupiter"> 
+        </div>
+        <div class="div-a">
+            <a href="{{ url_for('jupiter') }}" target=_self>Jupiter</a>
+        </div>
+        
+        <div class="div-row">
+            <img src="{{ url_for('static', filename='/image/IMG_saturn.jpg') }}" alt="Saturn">
+        </div>
+        <div class="div-a">
+            <a href="{{ url_for('saturn') }}" target=_self>Saturn</a>
+        </div>
+        
+        <div class="div-row">
+            <img src="{{ url_for('static', filename='/image/IMG_uranus.jpg') }}" alt="Uranus">
+        </div>
+        <div class="div-a">
+            <a href="{{ url_for('uranus') }}" target=_self>Uranus</a>
+        </div>
+
+        <div class="div-row">
+            <img src="{{ url_for('static', filename='/image/IMG_neptune.jpg') }}" alt="Neptune">
+        </div>
+        <div class="div-a">
+            <a href="{{ url_for('neptune') }}" target=_self>Neptune</a>
+        </div>
+        
+        <div class="div-row">
+            <img src="{{ url_for('static', filename='/image/IMG_moon.jpg') }}" alt="Moon">
+        </div>
+        <div class="div-a">
+            <a href="{{ url_for('moon') }}" target=_self>Moon</a>
+        </div>
+
+         <div class="div-row">
+             <form action="{{ url_for('show_list') }}" method="POST" id="itinerary">
+                <button type="submit" form="itinerary" formmethod="post">Make Itinerary</button>
+            </form>
+         </div>    
+
+        <footer>
+            <div class="navbar">
+                <p>2023 Nasa Hackathon</p>
+            </div>
+        </footer>
+
+        <script>
+            var btn = document.querySelector('button');
+            var chosen = {{ chosen|tojson }};
+
+            btn.addEventListener('click', function(e) {
+                if (chosen.length != 7) {
+                    var text = `Please choose 7 sites for your trip ! \nYou now have ${chosen.length} of them, including`;
+                    for (var i=0; i<chosen.length; i++) {
+                        text += `\n${chosen[i]}`;
+                    }
+                    alert(text);
+                }
+            })
+        </script>
+    </body>
+</html>

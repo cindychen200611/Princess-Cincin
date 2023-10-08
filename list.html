@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Itinerary</title>
+        <link rel="icon" type="image/x-icon" href="/static/image/IMG_4613-removebg-preview.png">
+        <link rel="stylesheet" href="/static/itinerary.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <ul>
+                <li class="li-img">
+                    <img src="/static/image/IMG_4614-removebg-preview.png" alt="Galactic Ventures">
+                </li>
+                <li>
+                    <strong>Galactic Ventures</strong>
+                </li>
+            </ul>
+        </div>
+        
+        <h1>Your Itinerary</h1>
+        
+        <table>
+            <tr>
+                <th>Day No.</th>
+                <th>Site</th>
+                <th>Distance to Destination</th>
+                <th>Estimate Travelling Time</th>
+            </tr>
+            {% for i in range(7) %}
+                <tr>
+                    <td>Day {{ i+1 }}</td>
+                    <td>{{ chosen[i][0] }}</td>
+                    {% if chosen[i][1] == 0 %}
+                        <td>less than a million km</td>
+                    {% else %}
+                        <td>{{ chosen[i][1] }} million km</td>
+                    {% endif %}
+                    {% if chosen[i][1]//50 < 1 %}
+                        <td>less than an hour</td>
+                    {% else %}
+                        <td>{{ chosen[i][1]//50 }} hr.</td>
+                    {% endif %}
+                </tr>
+            {% endfor %}
+        </table>
+
+        <div style="display: flex;">
+            <a href="{{ url_for('index') }}">Make Another One</a>
+        </div>
+
+        <footer>
+            <div class="navbar">
+                <p>2023 Nasa Hackathon</p>
+            </div>
+        </footer>
+        
+    </body>
+</html>

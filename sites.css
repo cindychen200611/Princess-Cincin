@@ -1,0 +1,94 @@
+h1 {
+    text-align: center;
+    font-size: 300%;
+    padding: 3%;
+    margin: 0;
+    background-color: #e5e5e6;
+}
+
+body {
+    margin: 0;
+}
+
+.div-row {
+    width: 100%;
+    display: flex;
+    margin: 0;
+}
+
+div img {
+    width: 100%;
+}
+
+div a {
+    color: white;
+    text-decoration: none;
+    font-size: 250%;
+}
+
+div a:hover {
+    color: #e6e6e6;
+}
+
+.div-a {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 2% 0;
+    background-color: #041c3d;
+}
+
+.navbar {
+    background-color: #4482a6;
+    display: flex;
+    
+}
+
+.navbar img {
+    width: 60%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    float: left;
+}
+
+.li-img {
+    width: 8%;
+}
+
+.navbar strong {
+    font-size: 200%;
+    color: white;
+}
+
+.navbar p {
+    margin: 1%;
+    font-size: 150%;
+    color: white;
+}
+
+form button {
+    background-color: #ffffff;
+    border: 2px #061a6a solid;
+    border-radius: 5px;
+    color: #061a6a;
+    font-family: "Times New Roman";
+    font-size: 250%;
+    display: block;
+    margin: 10% auto;
+    width: 25%;
+    padding: 0.5% 1%;
+}
+
+form {
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #061a6a;
+    color: white;
+}

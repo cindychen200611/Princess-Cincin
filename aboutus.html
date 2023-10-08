@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        <title>About Us</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='/aboutus.css') }}">
+        <link rel="icon" type="image/x-icon" href="/static/image/IMG_4613-removebg-preview.png">
+    </head>
+    <body>
+        <div class="navbar">
+            <ul>
+                <li class="li-img">
+                    <img src="/static/image/IMG_4614-removebg-preview.png" alt="Galactic Ventures">
+                </li>
+                <li>
+                    <strong>Galactic Ventures</strong>
+                </li>
+                <li class="right-ones">
+                    <a href="{{ url_for('index') }}" target=_self>Home</a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="div-img">
+            <img src="static/image/aboutus.jpeg" alt="about us">
+        </div>
+        
+        
+        <footer>
+            <div class="navbar">
+                <p>2023 Nasa Hackathon</p>
+            </div>
+        </footer>  
+      
+    </body>
+</html>

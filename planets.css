@@ -1,0 +1,116 @@
+h1 {
+    font-size: 250%;
+    text-align: center;
+    color: white;
+    background-color: #77a1bd;
+    padding: 2%;
+    margin: 0;
+}
+
+h2 {
+    font-size: 180%;
+    color: #57524b;
+}
+
+.navbar {
+    background-color: #4482a6;
+    display: flex;
+    
+}
+
+.navbar img {
+    width: 60%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    float: left;
+}
+
+.li-img {
+    width: 8%;
+}
+
+.navbar strong {
+    font-size: 200%;
+    color: white;
+}
+
+.navbar p {
+    margin: 1%;
+    color: white;
+}
+
+p {
+    font-size: 130%;
+    color: #948e85;
+}
+
+body {
+    margin: 0;
+}
+
+.div-right {
+    display: inline-block;
+    align-items: center;
+    width: 40%;
+}
+
+.div-row {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 30%;
+    display: block;
+    margin-right: 3%;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    font-family: "Times New Roman";
+}
+
+a, button {
+    background-color: #b8cad6;
+    color: white;
+    font-size: 130%;
+    padding: 0.5% 1%;
+    margin: 0.25%;
+    border-radius: 5px;
+}
+
+.clicked {
+    color: white;
+    font-size: 130%;
+    padding: 0.5% 1%;
+    margin: 0.25%;
+    border-radius: 5px;
+}
+
+a:hover, button:hover, .click {
+    background-color: #a7b7c2;
+}
+
+.back-to-site {
+    display: flex;
+}
+
+.back-to-site a {
+    float: right;
+    background-color: #e6d7ac;
+    color: #8c8476;
+    margin: 2%;
+}
+
+.back-to-site a:hover {
+    background-color: #ddd0ac;
+}

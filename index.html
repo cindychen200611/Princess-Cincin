@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='/style.css') }}">
+        <link rel="icon" type="image/x-icon" href="/static/image/IMG_4613-removebg-preview.png">
+    </head>
+    <body>
+        <div class="navbar">
+            <ul>
+                <li class="li-img">
+                    <img src="/static/image/IMG_4614-removebg-preview.png" alt="Galactic Ventures">
+                </li>
+                <li>
+                    <strong>Galactic Ventures</strong>
+                </li>
+                <li class="right-ones sites">
+                    <a href="{{ url_for('sites') }}" target=_self>Sites</a>
+                </li>
+                <li class="right-ones aboutus">
+                    <a href="{{ url_for('aboutus') }}" target=_self>About us</a>
+                </li>
+            </ul>
+        </div>
+        <div class="div-img">
+            <img src="/static/image/welcome.jpeg" alt="welcome">
+        </div>
+        <div class="div-img">
+            <img src="/static/image/hometext.jpeg" alt="hometext">
+        </div>
+        <div class="div-img">
+            <img src="static/image/contactus.jpeg" alt="contactus">
+        </div>
+        
+
+        <footer>
+            <div class="navbar">
+                <p>2023 Nasa Hackathon</p>
+            </div>
+        </footer>
+        
+    </body>
+</html>
